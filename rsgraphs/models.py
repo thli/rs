@@ -10,3 +10,6 @@ from django.contrib.postgres.fields import ArrayField
 # 	EMA_9 = ArrayField(models.FloatField)
 # 	MACD = ArrayField(models.FloatField)
 # 	histogram = ArrayField(models.FloatField)
+
+# 	def update(self):
+# 		
