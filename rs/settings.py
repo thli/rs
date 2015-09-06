@@ -95,18 +95,3 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-
-# Parse database configuration from $DATABASE_URL
-import dj_database_url
-DATABASES = {}
-DATABASES['default'] =  dj_database_url.config(default=os.environ.get('DATABASE_URL'))
-# DATABASES = {
-    # 'default': {
-        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        # 'NAME': 'enlightnme',
-        # 'USER': 'webapps',
-        # 'PASSWORD': 'fun',
-        # 'HOST': 'localhost',
-        # 'PORT': '',  # Settoemptystringfordefault.
-    # }
-# }
