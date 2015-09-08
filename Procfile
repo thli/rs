@@ -1,1 +1,1 @@
-web: python manage.py collectstatic --noinput; gunicorn rsgraphs.wsgi --log-file -
+web: python manage.py collectstatic --noinput; gunicorn rs.wsgi --log-file -
