@@ -77,5 +77,6 @@ def graph(request, item_name):
 
     unique_url = py.plot(fig, filename = item_name, auto_open = False)
     context['url'] = unique_url
+    context['item_name'] = item_name
 
     return render_to_response('graph.html', context_instance=Context(context))
